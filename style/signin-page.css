@@ -11,7 +11,7 @@
   text-align: center;
 }
 
-/* left panel */
+/* right panel */
 .signin-panel {
   display: flex;
   flex: 5;
@@ -39,7 +39,7 @@
   font-weight: 300;
 }
 
-/* right panel */
+/* left panel */
 .greet-panel {
   display: flex;
   flex: 3;
