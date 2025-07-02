@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase - Sign Up</title>
+    <link rel="stylesheet" href="style/shared/global.css" />
+    <link rel="stylesheet" href="style/shared/page.css" />
+    <link rel="stylesheet" href="style/signup-page.css" />
+  </head>
+  <body class="page">
+    <main class="signup">
+      <!-- Left Panel -->
+      <section class="signup-panel">
+        <h1 class="signup-panel__header">Create Account</h1>
+        <h5 class="signup-panel__subheader">
+          "Hello, Mego! Create an account to start shopping with us"
+        </h5>
+
+        <form class="form">
+          <div class="form__group">
+            <label class="form__label" for="username">Username</label><br />
+            <input
+              type="text"
+              class="form__input form__input--username"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label><br />
+            <input
+              type="password"
+              class="form__input form__input--password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="password">Confirm Password</label
+            ><br />
+            <input
+              class="form__input form__input--confirm-password"
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm password"
+            />
+          </div>
+
+          <button type="submit" class="form__signup-button">SIGN UP</button>
+        </form>
+      </section>
+
+      <!-- Right Panel -->
+      <section class="greet-panel">
+        <h1 class="greet-panel__header">Hello, Amego!</h1>
+        <p class="greet-panel__subheader">
+          "Welcome to our store. Find great deals and shop with ease!"
+        </p>
+        <button class="greet-panel__signin-button">SIGN IN</button>
+      </section>
+    </main>
+  </body>
+</html>
