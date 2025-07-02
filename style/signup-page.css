@@ -1,0 +1,31 @@
+/* main container */
+.signup {
+  min-width: 200px;
+  min-height: 200px;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F8F9FA;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* left panel */
+.signup-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 6;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+/* right panel */
+.greet-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  border: 1px solid black;
+  padding: 20px;
+}
