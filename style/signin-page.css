@@ -1,19 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.page {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.auth {
+.signin {
   min-width: 200px;
   min-height: 200px;
   width: 900px;
@@ -25,22 +10,7 @@
   text-align: center;
 }
 
-.auth__intro {
-  display: flex;
-  flex: 3;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border: 1px solid white;
-  color: #FFFFFF;
-  background-color: #1E1E2E;
-  padding: 35px;
-  font-size: 14px;
-}
-
-.auth__panel {
+.signin-panel {
   display: flex;
   flex: 5;
   flex-direction: column;
@@ -55,14 +25,41 @@
   font-size: 12px;
 }
 
-.auth__title {
+.signin-panel__header {
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.signin-panel__subheader {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.greet-panel {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid white;
+  color: #FFFFFF;
+  background-color: #1E1E2E;
+  padding: 35px;
+  font-size: 14px;
+}
+
+.greet-panel__header {
   font-size: 25px;
   margin-top: 120px;
   margin-bottom: 45px;
   font-weight: 900;
 }
 
-.auth__signup-button {
+.greet-panel__signup-button {
   width: 140px;
   height: 40px;
   border-radius: 30px;
@@ -74,19 +71,7 @@
   font-weight: 700;
 }
 
-.auth__header {
-  font-size: 25px;
-  margin-top: 70px;
-  margin-bottom: 20px;
-  font-weight: 900;
-}
-
-.auth__subheader {
-  font-size: 10px;
-  font-weight: 300;
-}
-
-.signin-form {
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +80,16 @@
   gap: 15px;
 }
 
-.signin-form__button {
+.form__input {
+  width: 330px;
+  height: 35px;
+  border: 1px solid #929292;
+  padding-left: 10px;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.form__signin-button {
   width: 140px;
   height: 40px;
   border-radius: 30px;
@@ -104,13 +98,4 @@
   font-size: 10px;
   font-weight: 700;
   margin-top: 15px;
-}
-
-.signin-form__input {
-  width: 330px;
-  height: 35px;
-  border: 1px solid #929292;
-  padding-left: 10px;
-  border-radius: 8px;
-  margin-top: 8px;
 }

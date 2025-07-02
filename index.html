@@ -4,56 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ShopEase - Sign In</title>
+    <link rel="stylesheet" href="style/shared/global.css" />
+    <link rel="stylesheet" href="style/shared/page.css" />
     <link rel="stylesheet" href="style/signin-page.css" />
-    <script type="module" src="script/signin-page.js"></script>
   </head>
   <body class="page">
-    <main class="auth">
+    <main class="signin">
       <!-- Left Panel -->
-      <section class="auth__intro">
-        <h1 class="auth__title">Hello, Amego!</h1>
-        <p class="auth__text">
+      <section class="greet-panel">
+        <h1 class="greet-panel__header">Hello, Amego!</h1>
+        <p class="greet-panel__subheader">
           Welcome to our store. Find great deals and shop with ease!
         </p>
-        <button class="auth__signup-button">SIGN UP</button>
+        <button class="greet-panel__signup-button">SIGN UP</button>
       </section>
 
       <!-- Right Panel -->
-      <section class="auth__panel">
-        <h1 class="auth__header">Sign in to ShopEase</h1>
-        <p class="auth__subheader">
+      <section class="signin-panel">
+        <h1 class="signin-panel__header">Sign in to ShopEase</h1>
+        <p class="signin-panel__subheader">
           "Hello, Mego! Please log in to your account to continue shopping."
         </p>
 
-        <form class="signin-form">
-          <div class="signin-form__group">
-            <label class="signin-form__label" for="username">Username</label><br>
+        <form class="form">
+          <div class="form__group">
+            <label class="form__label" for="username">Username</label><br />
             <input
               type="text"
-              class="signin-form__input"
+              class="form__input form__input--username"
               id="username"
               name="username"
               placeholder="Username"
             />
           </div>
 
-          <div class="signin-form__group">
-            <label class="signin-form__label" for="password">Password</label><br>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label><br />
             <input
               type="password"
-              class="signin-form__input"
+              class="form__input form__input--password"
               id="password"
               name="password"
               placeholder="Password"
             />
           </div>
 
-          <button
-            type="submit"
-            class="signin-form__button signin-form__button--primary"
-          >
-            SIGN IN
-          </button>
+          <button type="submit" class="form__signin-button">SIGN IN</button>
         </form>
       </section>
     </main>
