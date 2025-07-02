@@ -1,3 +1,4 @@
+/* main container */
 .signin {
   min-width: 200px;
   min-height: 200px;
@@ -10,6 +11,7 @@
   text-align: center;
 }
 
+/* left panel */
 .signin-panel {
   display: flex;
   flex: 5;
@@ -37,6 +39,7 @@
   font-weight: 300;
 }
 
+/* right panel */
 .greet-panel {
   display: flex;
   flex: 3;
