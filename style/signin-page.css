@@ -1,3 +1,16 @@
+/* parent */
+.signin {
+  min-width: 200px;
+  min-height: 200px;
+  width: 900px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #F8F9FA;
+  text-align: center;
+}
+
 /* right panel */
 .signin-panel {
   display: flex;
@@ -12,6 +25,19 @@
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   font-size: 12px;
+  order: 2;
+}
+
+.signin-panel--flip {
+  order: 1;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .signin-panel__header {
@@ -35,18 +61,36 @@
   justify-content: flex-start;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border: 1px solid white;
+  border: 1px solid black;
   color: #FFFFFF;
   background-color: #1E1E2E;
   padding: 35px;
   font-size: 14px;
+  order: 1;
 }
+
+.greet-panel--flip {
+  order: 2;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 
 .greet-panel__header {
   font-size: 25px;
   margin-top: 120px;
   margin-bottom: 45px;
   font-weight: 900;
+}
+
+.greet-panel__subheader {
+  margin-bottom: 45px;
 }
 
 .greet-panel__signup-button {
@@ -68,4 +112,8 @@
 
 .form__signin-button {
   margin-top: 15px;
+}
+
+.form__group--password {
+  margin-bottom: 15px;
 }
