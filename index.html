@@ -17,7 +17,7 @@
         <p class="greet-panel__subheader">
           Welcome to our store. Find great deals and shop with ease!
         </p>
-        <button class="greet-panel__signup-button button">SIGN UP</button>
+        <button class="button button--signup">SIGN UP</button>
       </section>
 
       <!-- Right Panel -->
@@ -28,31 +28,31 @@
         </p>
 
         <form class="form">
-          <div class="form__group">
+          <div class="form__group form__group--username">
             <label class="form__label" for="username">Username</label><br />
             <input
               type="text"
               class="form__input form__input--username"
               id="username"
               name="username"
+              autocomplete="username"
               placeholder="Username"
             />
           </div>
 
-          <div class="form__group">
+          <div class="form__group form__group--password">
             <label class="form__label" for="password">Password</label><br />
             <input
               type="password"
               class="form__input form__input--password"
               id="password"
               name="password"
+              autocomplete="current-password"
               placeholder="Password"
             />
           </div>
 
-          <button type="submit" class="form__signin-button button">
-            SIGN IN
-          </button>
+          <button type="submit" class="button button--signin">SIGN IN</button>
         </form>
       </section>
     </main>
