@@ -1,20 +1,33 @@
 .page {
   display: flex;
   flex-direction: column;
+  background-color: #F8F9FA;
+  font-size: 12px;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 10px 20px;
   border-bottom: 1px solid black;
-  margin-bottom: 30px;
 }
 
 .header__logo {
-  background-color: #d4d0d0;
-  padding: 10px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+.header__action {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
 }
 
 .homepage {
@@ -23,7 +36,7 @@
 }
 
 .hero {
-  padding: 100px;
+  padding: 40px 80px;
   border-bottom: 1px solid black;
 }
 
@@ -60,9 +73,7 @@
 
 .categories {
   padding-top: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-bottom: 30px;
+  padding: 40px 150px;
 }
 
 .categories-container {
@@ -78,24 +89,46 @@
 }
 
 .about__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   background-color: #13131D;
-  padding: 100px;
+  padding: 50px 100px;
+  color: #F8F9FA;
 }
 
-.footer__columns {
+.footer__logo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__logo {
+  display: flex;
+  border: 1px solid #F8F9FA;
+  padding: 20px;
+}
+
+.footer__column-container {
   display: flex;
   flex-direction: row;
+  gap: 100px;
+  margin-left: 400px;
 }
 
 .footer__column {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  padding: 20px;
 }

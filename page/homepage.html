@@ -9,22 +9,24 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="header__logo">Logo</div>
-      <nav class="header__navbar">
-        <a href="" class="header__link">Home</a>
-        <a href="" class="header__link">Shop</a>
-        <a href="" class="header__link">About</a>
-      </nav>
-      <div class="header__search">
+      <div class="header__action">
+        <div class="header__logo">LOGO</div>
+        <nav class="header__navbar">
+          <a href="" class="header__link">Home</a>
+          <a href="" class="header__link">Shop</a>
+          <a href="" class="header__link">About</a>
+        </nav>
+      </div>
+      <div class="header__action">
         <input
           type="text"
           class="header__search-input"
           placeholder="Search..."
         />
-      </div>
-      <div class="header__action">
         <a href="" class="button button__cart">Cart</a>
-        <a href="" class="button button__profile">Profile</a>
+        <a href="" class="button button--profile">
+          <img alt="Profile" class="button__icon" />
+        </a>
       </div>
     </header>
 
@@ -70,7 +72,6 @@
               <p class="product-card__price">$29</p>
             </div>
           </div>
-          <!-- more cards... -->
         </div>
         <a href="" class="button top-products__view-all">View All</a>
       </section>
@@ -107,9 +108,12 @@
       </section>
 
       <footer class="footer">
-        <div class="footer__logo">ShopEase</div>
-        
-        <div class="footer__columns">
+        <div class="footer__logo-container">
+          <div class="footer__logo">LOGO</div>
+          <p>ShopEase</p>
+        </div>
+
+        <div class="footer__column-container">
           <div class="footer__column">
             <h4 class="footer__title">Menu</h4>
             <a href="" class="footer__link">Home</a>
