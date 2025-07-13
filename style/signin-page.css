@@ -29,15 +29,17 @@
 
 /* parent */
 .signin {
-  min-width: 200px;
-  min-height: 200px;
-  width: 900px;
-  height: 500px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   background-color: #F8F9FA;
   text-align: center;
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
+  height: auto;
+  margin: auto;
 }
 
 /* right panel */
@@ -114,7 +116,7 @@
 .greet-panel__header {
   font-size: 25px;
   margin-top: 120px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   font-weight: 900;
 }
 
